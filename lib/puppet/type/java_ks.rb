@@ -72,7 +72,7 @@ Puppet::Type.newtype(:java_ks) do
     desc 'Optional storetype
       Valid options: <jceks>, <pkcs12>'
 
-    newvalues(:jceks, :pkcs12)
+    newvalues(:jceks, :pkcs12, :jks)
   end
 
   newparam(:private_key) do
